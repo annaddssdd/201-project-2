@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+      <title>A.</title>
+  </head>
+  <body>
+  <div class="title">
+        <ul class="pull-left">
+          <h1>M O O D</h1>
+		  </ul>
+		<ul class="nav nav-pills pull-right" style="padding-top:30px; padding-right:20px;">
+           <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="This goes straight into the calling page">Call</a></li>	
+		   <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="This goes straight into the chatting page">Message</a></li>	
+		   <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="This goes straight into the chatting page">Inbox<span class="badge">5</span></a></li>	
+		   <li><a href="home.html">Sign out</a></li>	
+        </ul>
+  </div>
+  <div class="container" style="padding-top:110px;">
+  <div class="row">
+  <div class="col-sm-4 panel panel-default"style="padding:1px;">
+  <div class="panel-heading">
+    <div class="form-group">
+          <p for="comment">Browse Moods</p>
+           <textarea class="form-control" rows="1" id="comment"></textarea>
+        </div>
+  </div>
+  <div class="panel-heading">Suggestions</div>
+  <div class="panel-body"><a href="anxious.html" data-toggle="tooltip" title="For this prototype, no matter which one you click, it will go into the page for the mood 'Anxious'.">Bitter</a></div>
+  <div class="panel-body"><a href="anxious.html">:(</a></div>
+  <div class="panel-body"><a href="anxious.html">In Love</a></div>
+  <div class="panel-heading">New Moods</div>
+  <div class="panel-body"><a href="anxious.html">Life is Tough</a></div>
+  <div class="panel-body"><a href="anxious.html">Hard World</a></div>
+  <div class="panel-body"><a href="anxious.html">Tough Life</a></div>
+  <div class="panel-heading"><a href="#" data-toggle="tooltip" title="This is meant to be infinite scrolling.">+ More Stuff</a></div>
+ </div>
+ 
+ <div class="col-sm-4 panel panel-default"style="padding:1px;">
+  <div class="panel-heading">
+      <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">+Description
+         <span class="caret"></span></button>
+         <ul class="dropdown-menu">
+		 <div class="form-group">
+          <p for="comment"style="padding:5px;">How is your day?</p>
+           <textarea class="form-control" rows="3" id="comment"></textarea>
+        </div>
+         </ul>
+        </div>
+  </div>
+  <div class="panel-body"> 
+  <dl>
+    <dt style="padding:5px;">Jan.12.15</dt>
+    <dd style="padding:5px;">- "I have my mother's mouth and my father's eyes, on my face they are still together."</dd>
+    <dt style="padding:5px;">April.06.15</dt>
+    <dd style="padding:5px;">- "I am so tired"</dd>
+	<dt style="padding:5px;">Feb.11.14</dt>
+    <dd style="padding:5px;">- "I hope that this will be over soon."</dd>
+	<dt style="padding:5px;">Jan.3.14</dt>
+    <dd style="padding:5px;">- "I don't know what to type lol"</dd>
+  </dl>   
+  </div>
+</div>
+
+<div class="col-sm-4 panel panel-default"style="padding:1px;">
+  <div class="panel-heading">
+     <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">+Mood
+         <span class="caret"></span></button>
+         <ul class="dropdown-menu">
+		 <div class="form-group">
+          <p for="comment" style="padding:5px;">Lets do our best today!</p>
+           <textarea class="form-control" rows="3" id="comment"></textarea>
+        </div>
+         </ul>
+        </div>
+  </div>
+  <div class="panel-heading">Recents</div>
+  <div class="panel-body"><a href="anxious.html" data-toggle="tooltip" title="If you want to see who else is anxious, just click on the mood.">Anxious</a></div>
+  <div class="panel-body"><a href="anxious.html">Tired</a></div>
+  <div class="panel-body"><a href="anxious.html">Stressed</a></div>
+  <div class="panel-heading">From June,2015</div>
+  <div class="panel-body"><a href="anxious.html">Fallen out of Love</a></div>
+  <div class="panel-heading">From April,2015</div>
+  <div class="panel-body"><a href="anxious.html">Relaxed</a></div>
+  <div class="panel-body"><a href="anxious.html">:)</a></div>
+  <div class="panel-heading">From March,2015</div>
+  <div class="panel-body"><a href="anxious.html">In Love</a></div>
+</div>
+  </div>
+  </div>
+
+  
+<div class="footer">
+  <p>Depression Helpline:<a href="#" data-toggle="tooltip" title="This goes straight into the calling page">(00)123-456-789</a> Anxiety Helpline:  <a href="#" data-toggle="tooltip" title="This goes straight into the calling page">(00)123-456-789</a></p>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+</body>

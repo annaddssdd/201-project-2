@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+      <title>Late Night Express</title>
+  </head>
+<body>
+  <div class="title">
+        <ul class="pull-left">
+          <h1>M O O D</h1>
+        </ul>
+		<ul class="pull-right nav nav-pills" style="padding-top:10px; padding-right:30px;">
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">LOG IN/SIGN UP</button>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Hello!</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+             <p for="usr">Username:</p>
+             <input type="text" class="form-control" id="usr">
+           </div>
+           <div class="form-group">
+             <p for="pwd">Password:</p>
+             <input type="password" class="form-control" id="pwd">
+           </div>
+		   <div class="form-group">
+             <p for="usr">E-mail:</p>
+             <input type="text" class="form-control" id="usr">
+           </div>
+      </div>
+      <div class="modal-footer">
+        <ul class="nav nav-pills">
+  <li class="active"><a href="personal.html">Sign up!</a></li>
+  <li><a href="personal.html">Click here to log in</a></li>
+</ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+		
+        </ul>
+  </div>
+  <div class="container">
+   <img src="img/c.jpg" class="img-responsive" width="960px" height="10px">     
+  </div>
+  <div class="row" style="padding-left:100px;">
+  <div class="col-sm-4"></div>
+  <div class="col-md-2"><a href="#" data-toggle="tooltip" title="This goes straight into the calling page but I don't know how to construct that technically...."><img src="img/a.png" class="img-responsive" width="80px" height="80px" style="padding:5px;"></a>
+  </div>
+  <div class="col-md-2"><a href="#" data-toggle="tooltip" title="This goes into a chatroom like page but again, I don't know how that is contructed and if I can do it on time."><img src="img/b.png" class="img-responsive" width="80px" height="80px"style="padding:5px;"></a>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Depression Helpline:<a href="#" data-toggle="tooltip" title="This goes straight into the calling page">(00)123-456-789</a> Anxiety Helpline:  <a href="#" data-toggle="tooltip" title="This goes straight into the calling page">(00)123-456-789</a></p>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+</body>
