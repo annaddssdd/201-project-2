@@ -7,105 +7,122 @@
     <link href="css/style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-   <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+	  <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
+   	   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400italic' rel='stylesheet' type='text/css'>
+	   <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+
       <title>A.</title>
   </head>
   <body>
-  <div class="title">
+
+<div class="title-fluid" style="background-image:url('img/000.png'); background-repeat:no-repeat;padding-bottom:5%;">
         <ul class="pull-left">
-          <h1>M O O D</h1>
+          <h1><a href="home.html">M O O D</a></h1>
 		  </ul>
-		<ul class="nav nav-pills pull-right" style="padding-top:30px; padding-right:20px;">
-           <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="This goes straight into the calling page">Call</a></li>	
-		   <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="This goes straight into the chatting page">Message</a></li>	
-		   <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="This goes straight into the chatting page">Inbox<span class="badge">5</span></a></li>	
-		   <li><a href="home.html">Sign out</a></li>	
+		<ul class="nav nav-pills pull-right">
+           <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="This goes straight into the calling page"><img src="img/a.png" class="img-responsive" width="80px" height="80px" style="padding:5px;"></a></li>	
+		   <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="This goes straight into the chatting page"><img src="img/b.png" class="img-responsive" width="80px" height="80px"style="padding:5px;"></a></li>	
+		   <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="This goes straight into the chatting page"><img src="img/c.png" class="img-responsive" width="80px" height="80px"style="padding:5px;"></a></li>	
+		   <li><a href="home.html"><img src="img/d.png" class="img-responsive" width="80px" height="80px"style="padding:5px;"></a></li>	
         </ul>
-  </div>
-  <div class="container" style="padding-top:110px;">
-  <div class="row">
-  <div class="col-sm-4 panel panel-default"style="padding:1px;">
-  <div class="panel-heading">
-    <div class="form-group">
+</div>
+<div style="background-image:url('img/coo.png'); background-repeat: no-repeat; background-position: bottom right;">
+  <div class="container-fluid" style="padding-bottom:0%;">
+  <div class="row-fluid">
+<div class="col-sm-3 panel panel-default" style="background-color: rgba(245, 245, 245, 0);">
+    <div class="form-group" style="padding:10%;">
           <p for="comment">Browse Moods</p>
            <textarea class="form-control" rows="1" id="comment"></textarea>
+		   
         </div>
-  </div>
-  <div class="panel-heading">Suggestions</div>
-  <div class="panel-body"><a href="anxious.html" data-toggle="tooltip" title="For this prototype, no matter which one you click, it will go into the page for the mood 'Anxious'.">Bitter</a></div>
-  <div class="panel-body"><a href="anxious.html">:(</a></div>
-  <div class="panel-body"><a href="anxious.html">In Love</a></div>
-  <div class="panel-heading">New Moods</div>
-  <div class="panel-body"><a href="anxious.html">Life is Tough</a></div>
-  <div class="panel-body"><a href="anxious.html">Hard World</a></div>
-  <div class="panel-body"><a href="anxious.html">Tough Life</a></div>
-  <div class="panel-heading"><a href="#" data-toggle="tooltip" title="This is meant to be infinite scrolling.">+ More Stuff</a></div>
+  <div class="panel-body"><h2>Suggestions</h2></div>
+  <div class="panel-body"><a href="anxious.html" data-toggle="tooltip" title="For this prototype, no matter which one you click, it will go into the page for the mood 'Anxious'."><p>Bitter</p></a></div>
+  <div class="panel-body"><a href="anxious.html"><p>:(</p></a></div>
+  <div class="panel-body"><a href="anxious.html"><p>In Love</p></a></div>
+  <div class="panel-body"><h2>New Moods</h2></div>
+  <div class="panel-body"><a href="anxious.html"><p>Life is Tough</p></a></div>
+  <div class="panel-body"><a href="anxious.html"><p>Hard World</p></a></div>
+  <div class="panel-body"><a href="anxious.html"><p>Tough Life</p></a></div>
  </div>
  
- <div class="col-sm-4 panel panel-default"style="padding:1px;">
-  <div class="panel-heading">
+ <div class="col-sm-4 panel panel-default"style="padding:1px;background-color: rgba(245, 245, 245, 0);">
+  <div class="panel-body" style="text-align:center;">
+     <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><h2>+Mood</h2>
+         <span class="caret"></span></button>
+         <ul class="dropdown-menu">
+		 <div class="form-group">
+          <p for="comment" style="padding:5px;">Lets do our best today!</p>
+           <textarea class="form-control" rows="3" id="comment"></textarea>
+		   <a href="https://twitter.com/intent/tweet?button_hashtag=mood201" class="twitter-hashtag-button" data-related="mddn201">Tweet your mood to #mood201</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+         </ul>
+        </div>
+  </div>
+  <div class="panel-body"><h2>Recents</h2></div>
+  <div class="panel-body"><a href="anxious.html" data-toggle="tooltip" title="If you want to see who else is anxious, just click on the mood."><p>Anxious</p></a></div>
+  <div class="panel-body"><a href="anxious.html"><p>Tired</p></a></div>
+  <div class="panel-body"><a href="anxious.html"><p>Stressed</p></a></div>
+  <div class="panel-body"><h2>From June,2015</h2></div>
+  <div class="panel-body"><a href="anxious.html"><p>Fallen out of Love</p></a></div>
+  <div class="panel-body"><h2>From March,2015</h2></div>
+  <div class="panel-body"><a href="anxious.html"><p>In Love</p></a></div>
+</div>
+
+ <div class="col-sm-5 panel panel-default"style="padding:20px; padding-top:1px;background-color: rgba(245, 245, 245, 0);">
+  <div class="panel-body" style="text-align:center;">
       <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">+Description
+          <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><h2>+Description</h2>
          <span class="caret"></span></button>
          <ul class="dropdown-menu">
 		 <div class="form-group">
           <p for="comment"style="padding:5px;">How is your day?</p>
-           <textarea class="form-control" rows="3" id="comment"></textarea>
+           <textarea class="form-control" rows="3" id="comment"></textarea>		  
+		   <a href="https://twitter.com/intent/tweet?button_hashtag=mood201" class="twitter-hashtag-button" data-related="mddn201">Tweet your mood to #mood201</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </div>
          </ul>
         </div>
   </div>
   <div class="panel-body"> 
   <dl>
-    <dt style="padding:5px;">Jan.12.15</dt>
-    <dd style="padding:5px;">- "I have my mother's mouth and my father's eyes, on my face they are still together."</dd>
-    <dt style="padding:5px;">April.06.15</dt>
-    <dd style="padding:5px;">- "I am so tired"</dd>
-	<dt style="padding:5px;">Feb.11.14</dt>
-    <dd style="padding:5px;">- "I hope that this will be over soon."</dd>
-	<dt style="padding:5px;">Jan.3.14</dt>
-    <dd style="padding:5px;">- "I don't know what to type lol"</dd>
+    <dt style="padding:5px;"><h4>Jan.12.15</h4></dt>
+    <dd style="padding:5px;"><p>- "I have my mother's mouth and my father's eyes, on my face they are still together."</p></dd>
+    <dt style="padding:5px;"><h4>April.06.15</h4></dt>
+    <dd style="padding:5px;"><p>- "I am so tired. I don't want to talk to anyone."</p></dd>
   </dl>   
   </div>
-</div>
-
-<div class="col-sm-4 panel panel-default"style="padding:1px;">
-  <div class="panel-heading">
-     <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">+Mood
-         <span class="caret"></span></button>
-         <ul class="dropdown-menu">
-		 <div class="form-group">
-          <p for="comment" style="padding:5px;">Lets do our best today!</p>
-           <textarea class="form-control" rows="3" id="comment"></textarea>
-        </div>
-         </ul>
-        </div>
-  </div>
-  <div class="panel-heading">Recents</div>
-  <div class="panel-body"><a href="anxious.html" data-toggle="tooltip" title="If you want to see who else is anxious, just click on the mood.">Anxious</a></div>
-  <div class="panel-body"><a href="anxious.html">Tired</a></div>
-  <div class="panel-body"><a href="anxious.html">Stressed</a></div>
-  <div class="panel-heading">From June,2015</div>
-  <div class="panel-body"><a href="anxious.html">Fallen out of Love</a></div>
-  <div class="panel-heading">From April,2015</div>
-  <div class="panel-body"><a href="anxious.html">Relaxed</a></div>
-  <div class="panel-body"><a href="anxious.html">:)</a></div>
-  <div class="panel-heading">From March,2015</div>
-  <div class="panel-body"><a href="anxious.html">In Love</a></div>
 </div>
   </div>
   </div>
 
   
 <div class="footer">
-  <p>Depression Helpline:<a href="#" data-toggle="tooltip" title="This goes straight into the calling page">(00)123-456-789</a> Anxiety Helpline:  <a href="#" data-toggle="tooltip" title="This goes straight into the calling page">(00)123-456-789</a></p>
+  <p>Depression Helpline:<a href="#" data-toggle="tooltip" title="This goes straight into the calling page">(00)123-456-789</a> Anxiety Helpline:  <a href="#" data-toggle="tooltip" title="This goes straight into the calling page">(00)123-456-789</a></p><p><a href="https://twitter.com/mddn201" class="twitter-follow-button" data-show-count="false">Follow @mddn201</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
 </div>
-
+</div>
 <script>
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
 });
 </script>
-
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 </body>

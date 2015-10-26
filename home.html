@@ -1,77 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-   <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
-      <title>Late Night Express</title>
-  </head>
-<body>
-  <div class="title">
-        <ul class="pull-left">
-          <h1>M O O D</h1>
-        </ul>
-		<ul class="pull-right nav nav-pills" style="padding-top:10px; padding-right:30px;">
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">LOG IN/SIGN UP</button>
-
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Hello!</h4>
-      </div>
-      <div class="modal-body">
-        <div class="form-group">
-             <p for="usr">Username:</p>
-             <input type="text" class="form-control" id="usr">
-           </div>
-           <div class="form-group">
-             <p for="pwd">Password:</p>
-             <input type="password" class="form-control" id="pwd">
-           </div>
-		   <div class="form-group">
-             <p for="usr">E-mail:</p>
-             <input type="text" class="form-control" id="usr">
-           </div>
-      </div>
-      <div class="modal-footer">
-        <ul class="nav nav-pills">
-  <li class="active"><a href="personal.html">Sign up!</a></li>
-  <li><a href="personal.html">Click here to log in</a></li>
-</ul>
-      </div>
-    </div>
-
-  </div>
-</div>
-		
-        </ul>
-  </div>
-  <div class="container">
-   <img src="img/c.jpg" class="img-responsive" width="960px" height="10px">     
-  </div>
-  <div class="row" style="padding-left:100px;">
-  <div class="col-sm-4"></div>
-  <div class="col-md-2"><a href="#" data-toggle="tooltip" title="This goes straight into the calling page but I don't know how to construct that technically...."><img src="img/a.png" class="img-responsive" width="80px" height="80px" style="padding:5px;"></a>
-  </div>
-  <div class="col-md-2"><a href="#" data-toggle="tooltip" title="This goes into a chatroom like page but again, I don't know how that is contructed and if I can do it on time."><img src="img/b.png" class="img-responsive" width="80px" height="80px"style="padding:5px;"></a>
-  </div>
-</div>
-
-<div class="footer">
-  <p>Depression Helpline:<a href="#" data-toggle="tooltip" title="This goes straight into the calling page">(00)123-456-789</a> Anxiety Helpline:  <a href="#" data-toggle="tooltip" title="This goes straight into the calling page">(00)123-456-789</a></p>
-</div>
-
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
+	<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="fixed-positioning.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	  <script type="text/javascript" src="dist/skrollr.min.js"></script>
+	  <script>
+      var s = skrollr.init();
 </script>
+	  <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
+	   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400italic' rel='stylesheet' type='text/css'>
+		  <title>Late Night Express</title>
+	  </head>
 
-</body>
+	<body>
+	<div id="intro" data-0="opacity:1;top:0%;transform-origin:0 0;" data-300="opacity:0;top:-10%;">
+		<h2 style="padding:20%;padding-bottom:1%;padding-top:15%;">welcome to</h2>
+		<h1 style="padding:20%;padding-bottom:1%;padding-top:0%;background-image:url('img/000.png');background-repeat:no-repeat;">M O O D</h1>
+		<div class="row row-centered" style="padding-top:5%;">
+		  <div class="col-sm-1 col-centered">
+<div class="centerBlock">
+		  <a href="#" data-toggle="tooltip" data-placement="bottom" title="This goes straight into the calling page."><img src="img/a.png" class="img-responsive" width="80px" height="80px"></a>
+</div>
+		  </div>
+  <div class="col-sm-1 col-centered">
+<div class="centerBlock">
+  <a href="#" data-toggle="tooltip" data-placement="bottom" title="This goes into a chatroom like page."><img src="img/b.png" class="img-responsive" width="80px" height="80px"></a>
+</div>
+  </div>
+  </div>
+	</div>
+
+	<div id="body" data-300="opacity:0;top:100%;" data-600="opacity:1;display:block;top:-5%;">
+	  <div class="title-fluid">
+			<ul class="pull-left">
+			  <h1 style="font-size:50px;">M O O D</h1>
+			</ul>
+			<ul class="pull-right">
+			<a href="#" data-toggle="tooltip" data-placement="bottom" title="This goes straight into the calling page."><img src="img/a.png" class="img-responsive" width="80px" height="80px" style="padding:5px;padding-top:10px;"></a>
+			</ul>
+			<ul class="pull-right">
+			<a href="#" data-toggle="tooltip" data-placement="bottom" title="This goes into a chatroom like page."><img src="img/b.png" class="img-responsive" width="80px" height="80px"style="padding:5px;padding-top:10px;"></a>
+			</ul>
+	  </div>	
+	  <div class="container1" style="background-image:url('img/home.png');background-repeat:no-repeat;background-position:center top;">
+	  <div class="container">
+	  <ul class="pull-left">
+			<div class="form-group">
+				 <p for="usr" style="text-align:center;">Username</p>
+				 <input type="text" class="form-control" id="usr">
+			   </div>
+			   <div class="form-group">
+				 <p for="pwd" style="text-align:center;">Password</p>
+				 <input type="password" class="form-control" id="pwd">
+			   </div>
+			   <div class="form-group">
+				 <p for="usr" style="text-align:center;">E-mail</p>
+				 <input type="text" class="form-control" id="usr">
+			   </div>
+			   <ul class="nav nav-pills">
+			   <li><a href="personal.html">Sign up!</a></li>
+			   </ul>
+		</ul>
+		<ul class="pull-right">
+		    <div class="form-group">
+				 <p for="usr" style="text-align:center;">Username</p>
+				 <input type="text" class="form-control" id="usr">
+			   </div>
+			   <div class="form-group">
+				 <p for="pwd" style="text-align:center;">Password</p>
+				 <input type="password" class="form-control" id="pwd">
+			   </div>
+			   <ul class="nav nav-pills">
+	  <li><a href="personal.html">Log in!</a></li>
+	</ul>
+	<a href="#" data-toggle="tooltip" data-placement="bottom" title="RIP to this function that I couldn't implement. Progress on how I failed at the twitter API on my blog."><img src="img/rip.png" class="img-responsive" style="padding:2%;"></a>
+		</ul>
+      </div>		
+	  </div>
+	  
+	<div class="footer">
+	  <p>Depression Helpline:<a href="#" data-toggle="tooltip" title="This goes straight into the calling page">(00)123-456-789</a> Anxiety Helpline:  <a href="#" data-toggle="tooltip" title="This goes straight into the calling page">(00)123-456-789</a></p><p><a href="https://twitter.com/mddn201" class="twitter-follow-button" data-show-count="false">Follow @mddn201</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+	</div>
+</div>
+	<script>
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip();   
+	});
+	</script>
+
+		<script type="text/javascript">
+		var s = skrollr.init({
+			edgeStrategy: 'set',
+			easing: {
+				WTF: Math.random,
+				inverted: function(p) {
+					return 1-p;
+				}
+			}
+		});
+		</script>
+		<script>window.twttr = (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0],
+		t = window.twttr || {};
+	  if (d.getElementById(id)) return t;
+	  js = d.createElement(s);
+	  js.id = id;
+	  js.src = "https://platform.twitter.com/widgets.js";
+	  fjs.parentNode.insertBefore(js, fjs);
+	 
+	  t._e = [];
+	  t.ready = function(f) {
+		t._e.push(f);
+	  };
+	 
+	  return t;
+	}(document, "script", "twitter-wjs"));</script>
+
+	</body>
